@@ -103,3 +103,21 @@ ul.songs li {
     max-width: 100%;
     width: 500px;
 }
+
+.container h2 {
+    font-weight: 300;
+}
+
+.container p {
+    text-align: center;
+}
+
+.centerd {
+    display: flex;
+    justify-content: center;
+}
+
+.centered button {
+    transform: scale(1.3);
+    margin: 15px;
+}
