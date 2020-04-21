@@ -112,7 +112,7 @@ ul.songs li {
     text-align: center;
 }
 
-.centerd {
+.centered {
     display: flex;
     justify-content: center;
 }
