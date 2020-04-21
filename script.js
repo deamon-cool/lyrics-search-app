@@ -14,6 +14,28 @@ async function searchSong(term) {
     const res = await fetch(`${apiURL}/suggest/${term}`);
     const data = await res.json();
 
+    showData(data);
+}
+
+// Show song and artists in DOM
+function showData(data) {
+    let output = '';
+
+    data.data.forEach(song => {
+        output += `
+            <li>
+                <span><strong>${song.artist.name}</strong> - ${song.title}</span>
+                <button class="btn" data-artist="${song.artist.name}"
+                data-songtitle="${song.title}">Get Lyrics</button>
+            </li>
+        `;
+    });
+
+    return result.innerHTML = `
+        <ul class="songs">
+            ${output}
+        </ul>
+    `;
 }
 
 
