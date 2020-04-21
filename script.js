@@ -6,10 +6,14 @@ const more = document.getElementById('more');
 const apiURL = 'https://api.lyrics.ovh';
 
 // Search by song artists
-function searchSong(term) {
+async function searchSong(term) {
     fetch(`${apiURL}/suggest/${term}`)
         .then(res => res.json())
         .then(data => console.log(data));
+
+    const res = await fetch(`${apiURL}/suggest/${term}`);
+    const data = await res.json();
+
 }
 
 
