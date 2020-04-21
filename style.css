@@ -77,3 +77,29 @@ form button {
     font-size: 16px;
     padding: 13px 30px;
 }
+
+.btn {
+    background-color: #8d56fd;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    padding: 4px 10px;
+}
+
+ul.songs {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.songs li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.container {
+    margin: 30px auto;
+    max-width: 100%;
+    width: 500px;
+}
