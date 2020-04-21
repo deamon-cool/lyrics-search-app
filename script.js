@@ -59,3 +59,16 @@ form.addEventListener('submit', e => {
     }
 
 });
+
+// Get lyrics button click
+result.addEventListener('click', e => {
+    const clickedEl = e.target;
+
+    if(clickedEl.tagName === 'BUTTON') {
+        const artist = clickedEl.getAttribute('data-artist');
+        const songTitle = clickedEl.getAttribute('data-songtitle');
+
+        getLyrics(artist, songTitle);
+    }
+});
+
